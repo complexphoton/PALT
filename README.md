@@ -6,7 +6,7 @@ The [PALT program](https://github.com/complexphoton/PALT/tree/main/PALT) include
    - [Dth0_Dth1.m](https://github.com/complexphoton/PALT/blob/main/PALT/Dth0_Dth1.m)
    - [Dth1_Dth2.m](https://github.com/complexphoton/PALT/blob/main/PALT/Dth1_Dth2.m)
    - [Dth2_Dth3.m](https://github.com/complexphoton/PALT/blob/main/PALT/Dth2_Dth3.m)
-   - [FieldProfile.m](https://github.com/complexphoton/PALT/blob/main/PALT/Dth2_Dth3.m)
+   - [FieldProfile.m](https://github.com/complexphoton/PALT/blob/main/PALT/FieldProfile.m)
 -	functions folder containing the core equations of PALT solver,
 -	data folder that stores the inputs and outputs of the program.
   
