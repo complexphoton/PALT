@@ -1,12 +1,12 @@
 # PALT
 **PALT** (<ins>P</ins>eriodic-inversion <ins>_a_</ins>_b_ _initio_ <ins>L</ins>aser <ins>T</ins>heory) solves Maxwell-Bloch equations for [limit cycles](https://en.wikipedia.org/wiki/Limit_cycle) with dynamic inversion, as well as linear cavity modes and fixed points. This program implement PALT for one-dimentional laser systems under outgoing boundary conditon. It is recommended to run on MATLAB R2020a or a later version.
 
-The PALT program includes the following components,
+The [PALT program](https://github.com/complexphoton/PALT/tree/main/PALT) includes the following components,
  - Four executable scripts,
-   - Dth0_Dth1.m
-   - Dth1_Dth2.m
-   - Dth2_Dth3.m
-   - FieldProfile.m
+   - [Dth0_Dth1.m](https://github.com/complexphoton/PALT/blob/main/PALT/Dth0_Dth1.m)
+   - [Dth1_Dth2.m](https://github.com/complexphoton/PALT/blob/main/PALT/Dth1_Dth2.m)
+   - [Dth2_Dth3.m](https://github.com/complexphoton/PALT/blob/main/PALT/Dth2_Dth3.m)
+   - [FieldProfile.m](https://github.com/complexphoton/PALT/blob/main/PALT/Dth2_Dth3.m)
 -	functions folder containing the core equations of PALT solver,
 -	data folder that stores the inputs and outputs of the program.
   
@@ -49,10 +49,10 @@ Taking an existing limit cycle solution, this script calculates the electrical f
 <img src= "https://github.com/complexphoton/PALT/assets/172996975/4a9cfcc0-a170-4945-810a-8dbaf7010ac0" width="450">
 
 # FDTD simulation
-This program iterates Maxwell-Bloch equations with [FDTD](https://en.wikipedia.org/wiki/Finite-difference_time-domain_method) method. It is used to demonstrate PALT. The folder includes,
-- **FDTD.jl**, the FDTD simulator.  
+The [FDTD program](https://github.com/complexphoton/PALT/tree/main/FDTD) iterates Maxwell-Bloch equations with [FDTD](https://en.wikipedia.org/wiki/Finite-difference_time-domain_method) method. It is used to demonstrate PALT. The folder includes,
+- [**FDTD.jl**](https://github.com/complexphoton/PALT/blob/main/FDTD/FDTD.jl), the FDTD simulator.  
 - **an example of initial condition**: xB.mat, xD.mat, xE.mat, xP_i.mat, xP_r.mat,
-- **DataProcessing.m**. This MATLAB script is used to read the transient simulation results and to compute the spectrum using FFT.
+- [**DataProcessing.m**](https://github.com/complexphoton/PALT/blob/main/FDTD/DataProcessing.m). This MATLAB script is used to read the transient simulation results and to compute the spectrum using FFT.
 
 ## FDTD.jl
 The FDTD simulator is developed in Julia. There are two build-in methods of initialization in the script (line 99 – line 117). Users can customize the initial condition as well. 
